@@ -23,6 +23,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
 
     -- Terminal
+    ["<F5>"] = { "<cmd>RunCode<cr>", desc = "Run code in split terminal" },
     ["<C-t>"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
 
     -- Debug
