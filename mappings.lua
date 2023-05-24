@@ -38,8 +38,13 @@ return {
     ["<C-s>"] = { ":w<cr>", desc = "Save File" },  -- change description but the same command
 
     -- Comments
-    ["<C-/>"] = { function() require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1) end, desc = "Comment line", }
+    ["<C-/>"] = { function() require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1) end, desc = "Comment line", },
+
+    -- Tab navigation
+    ["<C-Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
+    ["<C-S-Tab>"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
   },
+
   t = {
     ["<C-t>"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
     -- setting a mapping to false will disable it
