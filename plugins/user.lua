@@ -20,6 +20,17 @@ return {
       },
     })
   end,
+
+  {
+    "navarasu/onedark.nvim",
+    --as = "onedark",
+    config = function()
+      require("onedark").setup{
+        style = "darker",
+        transparent = true,
+      }
+    end,
+  },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
