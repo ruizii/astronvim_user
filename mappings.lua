@@ -33,6 +33,7 @@ return {
     ["<F2>"] = { function() require("dap").toggle_breakpoint() end, desc = "Debugger: Toggle Breakpoint" },
     ["<F8>"] = { function() require("dap").step_over() end, desc = "Debugger: Step Over" },
     ["<F7>"] = { function() require("dap").step_into() end, desc = "Debugger: Step Into" },
+    ["<F9>"] = { function() require("dap").continue() end, desc = "Debugger: Continue" },
     
     -- Quick save
     ["<C-s>"] = { ":w<cr>", desc = "Save File" },  -- change description but the same command
