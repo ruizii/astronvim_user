@@ -66,16 +66,6 @@ return {
       return opts
     end,
   },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    config = function()
-      require("neo-tree").setup {
-        window = {
-          width = 28,
-        },
-      }
-    end,
-  }
 
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
