@@ -6,7 +6,7 @@ return {
     config = function()
       require("code_runner").setup({
         startinsert = true,
-        
+
         term = {
           size = 15,
         },
@@ -28,7 +28,7 @@ return {
     "navarasu/onedark.nvim",
     lazy = false,
     config = function()
-      require("onedark").setup{
+      require("onedark").setup {
         style = "darker",
         transparent = true,
       }
@@ -43,7 +43,8 @@ return {
       })
     end,
   },
-  { -- override nvim-cmp plugin
+  {
+    -- override nvim-cmp plugin
     "hrsh7th/nvim-cmp",
     -- override the options table that is used in the `require("cmp").setup()` call
     opts = function(_, opts)
@@ -52,7 +53,7 @@ return {
       local cmp = require "cmp"
       -- modify the mapping part of the table
 
-      
+
       opts.mapping["<Tab>"] = cmp.mapping.confirm {
         select = false,
       }
@@ -65,8 +66,16 @@ return {
       return opts
     end,
   },
-
-
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    config = function()
+      require("neo-tree").setup {
+        window = {
+          width = 28,
+        },
+      }
+    end,
+  }
 
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
