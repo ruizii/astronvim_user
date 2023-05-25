@@ -44,6 +44,7 @@ return {
     -- Tab navigation
     ["<C-Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
     ["<C-S-Tab>"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
+    ["<C-w>"] = { function() require("astronvim.utils.buffer").close() end, desc = "Close buffer" }
   },
 
   t = {
