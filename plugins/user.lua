@@ -55,7 +55,7 @@ return {
 
 
       opts.mapping["<Tab>"] = cmp.mapping.confirm {
-        select = false,
+        select = true,
       }
       opts.mapping["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })
       opts.mapping["<Up>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })
