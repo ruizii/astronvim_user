@@ -36,6 +36,14 @@ return {
   },
 
   {
+    "iruzo/matrix-nvim",
+    lazy = false,
+    config = function()
+      require("matrix").set()
+    end
+  },
+
+  {
     "rcarriga/nvim-notify",
     config = function()
       require("notify").setup({
@@ -43,6 +51,7 @@ return {
       })
     end,
   },
+
   {
     -- override nvim-cmp plugin
     "hrsh7th/nvim-cmp",
