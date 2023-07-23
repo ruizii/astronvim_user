@@ -7,11 +7,7 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-        "pyright",
-        "clangd",
-        "bashls",
-        "gopls",
-        "tsserver"
+        -- "lua_ls",
       })
     end,
   },
@@ -22,11 +18,8 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-        "prettier",
-        "autopep8",
-        "gofumpt",
-        "beautysh",
-        "clang-format"
+        -- "prettier",
+        -- "stylua",
       })
     end,
   },
@@ -36,10 +29,7 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-        "python",
-        "delve",
-        "bash",
-        "cppdbg"
+        -- "python",
       })
     end,
   },

@@ -25,6 +25,14 @@ return {
   },
 
   {
+    "iruzo/matrix-nvim",
+    lazy = false,
+    config = function()
+      require("matrix").set()
+    end
+  },
+
+  {
     "navarasu/onedark.nvim",
     lazy = false,
     config = function()
@@ -33,14 +41,6 @@ return {
         transparent = true,
       }
     end,
-  },
-
-  {
-    "iruzo/matrix-nvim",
-    lazy = false,
-    config = function()
-      require("matrix").set()
-    end
   },
 
   {
