@@ -10,4 +10,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 }
