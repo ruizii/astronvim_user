@@ -12,5 +12,6 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 }
