@@ -24,7 +24,7 @@ return {
 
     -- Terminal
     ["<F5>"] = { "<cmd>RunCode<cr>", desc = "Run code in split terminal" },
-    ["<C-t>"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
+    ["<C-t>"] = { "<cmd>ToggleTerm size=13 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
 
     -- Debug
     ["<F29>"] = { function() require("dap").continue() end, desc = "Debugger: Start" }, -- Ctrl+F5
