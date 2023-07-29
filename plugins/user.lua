@@ -4,7 +4,7 @@ return {
     "CRAG666/code_runner.nvim",
     lazy = false,
     config = function()
-      require("code_runner").setup({
+      require("code_runner").setup {
         startinsert = true,
 
         term = {
@@ -16,20 +16,19 @@ return {
           javascript = "node",
           cpp = "cd $dir && g++ -Wall -Wextra $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
           c = "cd $dir && gcc -Wall -Wextra $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
-          go = "go run $fileName",
-          sh = "bash $fileName",
+          go = "go run",
+          sh = "bash",
           asm = "nasm -f elf64 $fileName && ld $fileNameWithoutExt.o -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+          lua = "lua",
         },
-      })
+      }
     end,
   },
 
   {
     "iruzo/matrix-nvim",
     lazy = false,
-    config = function()
-      require("matrix").set()
-    end
+    config = function() require("matrix").set() end,
   },
 
   {
@@ -46,12 +45,12 @@ return {
   {
     "rcarriga/nvim-notify",
     config = function()
-      require("notify").setup{
-        stages = 'fade_in_slide_out',
+      require("notify").setup {
+        stages = "fade_in_slide_out",
         background_colour = "FloatShadow",
         timeout = 3000,
       }
-      vim.notify = require('notify')
+      vim.notify = require "notify"
     end,
   },
 
@@ -69,13 +68,13 @@ return {
         select = true,
       }
       opts.mapping["<CR>"] = cmp.config.disable
-      opts.mapping["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })
-      opts.mapping["<Up>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })
+      opts.mapping["<Down>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Select }
+      opts.mapping["<Up>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Select }
 
       cmp.setup {
         completion = {
-          completeopt = 'menu,menuone,noinsert'
-        }
+          completeopt = "menu,menuone,noinsert",
+        },
       }
 
       -- opts.mapping["<Up>"] = cmp.mapping.select_prev_item(),
