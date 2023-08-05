@@ -14,8 +14,8 @@ return {
         filetype = {
           python = "python -u",
           javascript = "node",
-          cpp = "cd $dir && g++ -Wall -Wextra $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
-          c = "cd $dir && gcc -Wall -Wextra $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+          cpp = "cd $dir && g++ -g -Wall -Wextra $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+          c = "cd $dir && gcc -g -Wall -Wextra $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
           go = "go run",
           sh = "bash",
           asm = "nasm -f elf64 $fileName && ld $fileNameWithoutExt.o -o $fileNameWithoutExt && ./$fileNameWithoutExt",
