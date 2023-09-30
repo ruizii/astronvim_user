@@ -7,5 +7,7 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
-  { import = "astrocommunity.lsp.lsp-signature-nvim" }
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.cpp" }
 }
