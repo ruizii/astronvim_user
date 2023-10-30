@@ -19,12 +19,16 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     
+    -- Make c command not yank
+    ["c"] = { '"_c' },
+    
     -- Neotree
     ["<leader>b"] = { name = "Buffers" },
 
     -- Terminal
     ["<F5>"] = { "<cmd>RunCode<cr>", desc = "Run code in split terminal" },
     ["<C-t>"] = { "<cmd>ToggleTerm size=13 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
+
 
     -- Debug
     ["<F29>"] = { function() require("dap").continue() end, desc = "Debugger: Start" }, -- Ctrl+F5
