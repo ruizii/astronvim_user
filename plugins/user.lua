@@ -4,6 +4,7 @@ return {
     lazy = false,
     config = function()
       require("code_runner").setup {
+        mode = "toggleterm",
         startinsert = true,
 
         term = {
