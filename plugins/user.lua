@@ -28,7 +28,10 @@ return {
   {
     "iruzo/matrix-nvim",
     lazy = false,
-    config = function() require("matrix").set() end,
+    config = function()
+      vim.g.matrix_disable_background = true,
+      require("matrix").set()
+    end,
   },
 
   {
